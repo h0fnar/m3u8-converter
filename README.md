@@ -6,9 +6,11 @@ This is an application to solve Unicode issues when transfering music playlists 
 Special characters like ä,ö,é etc.  in path or file name on macOS will cause skipping issues on Rockbox. 
 This app solves this problem and additionally gives you the option to find and replace  within a playlist, so the paths will match with your Rockbox library.
 
+Just drag and drop a folder with m3u8´s. Hit Convert and a new folder with your converted m3u8`s will be created.
+
 Testet on macOS High Sierra, Mojave, Catalina.
 
-[_Download_](https://github.com/h0fnar/m3u8-converter/releases/download/v1.0.1/M3U8-Converter-1.0.1.dmg)  the latest version as dmg.
+[_Download_](https://github.com/h0fnar/m3u8-converter/releases/download/v1.0.1/M3U8-Converter-1.0.1.dmg)  the latest release as dmg.
 
 ![M3U8 Converter](/img/app.png)
 
