@@ -1,0 +1,14 @@
+# Ignore IDE files:
+.idea
+
+# Ignore Mac DS_Store files:
+.DS_Store
+**/.DS_Store
+
+# Ignore folders:
+build/
+dist/
+__pycache__/
+
+# Ignore spec files
+*.spec

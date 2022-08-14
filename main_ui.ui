@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>526</width>
+    <height>216</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>526</width>
+    <height>216</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>526</width>
+    <height>216</height>
+   </size>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>M3U8 Converter</string>
+  </property>
+  <widget class="QLineEdit" name="lineEdit_find">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>90</y>
+     <width>361</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_replace">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>361</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_find">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Find</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_folder">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>361</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_folder">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>60</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Folder</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_replace">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Replace</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_select">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>30</y>
+     <width>113</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Select</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_convert">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>180</y>
+     <width>113</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Convert</string>
+   </property>
+   <property name="autoDefault">
+    <bool>true</bool>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_quit">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>180</y>
+     <width>113</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_image_1">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>70</y>
+     <width>91</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="toolTipDuration">
+    <number>1</number>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resources.qrc">:/images/img/icon.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_utf8">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>180</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>utf8-mac to utf8</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_find_replace">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>180</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>find and replace</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_count">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>10</y>
+     <width>201</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#37e735;&quot;&gt;TextLabel &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="textInteractionFlags">
+    <set>Qt::TextEditable</set>
+   </property>
+  </widget>
+  <zorder>lineEdit_replace</zorder>
+  <zorder>lineEdit_find</zorder>
+  <zorder>label_find</zorder>
+  <zorder>label_folder</zorder>
+  <zorder>label_replace</zorder>
+  <zorder>button_select</zorder>
+  <zorder>button_convert</zorder>
+  <zorder>button_quit</zorder>
+  <zorder>label_image_1</zorder>
+  <zorder>checkBox_utf8</zorder>
+  <zorder>checkBox_find_replace</zorder>
+  <zorder>lineEdit_folder</zorder>
+  <zorder>label_count</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit_folder</tabstop>
+  <tabstop>button_select</tabstop>
+  <tabstop>lineEdit_find</tabstop>
+  <tabstop>lineEdit_replace</tabstop>
+  <tabstop>checkBox_utf8</tabstop>
+  <tabstop>checkBox_find_replace</tabstop>
+  <tabstop>button_quit</tabstop>
+  <tabstop>button_convert</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>button_select</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>select_button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>456</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_quit</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>quit_button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>195</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_convert</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>convert_button_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>456</x>
+     <y>195</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_utf8</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>Dialog</receiver>
+   <slot>utf8_checkbox()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>85</x>
+     <y>189</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_find_replace</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>Dialog</receiver>
+   <slot>find_replace_checkbox()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>215</x>
+     <y>189</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_folder</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog</receiver>
+   <slot>line_folder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>200</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_find</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog</receiver>
+   <slot>line_find()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>200</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_replace</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>Dialog</receiver>
+   <slot>line_replace()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>200</x>
+     <y>150</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>label_count</sender>
+   <signal>objectNameChanged(QString)</signal>
+   <receiver>Dialog</receiver>
+   <slot>label_count()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>19</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>select_button_clicked()</slot>
+  <slot>convert_button_clicked()</slot>
+  <slot>utf8_checkbox()</slot>
+  <slot>find_replace_checkbox()</slot>
+  <slot>line_folder()</slot>
+  <slot>line_find()</slot>
+  <slot>line_replace()</slot>
+  <slot>label_count()</slot>
+  <slot>quit_button_clicked()</slot>
+ </slots>
+</ui>
