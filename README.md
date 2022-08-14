@@ -10,7 +10,7 @@ Just drag and drop a folder with m3u8´s. Hit Convert and a new folder with your
 
 Testet on macOS High Sierra, Mojave, Catalina.
 
-[_Download_](https://github.com/h0fnar/m3u8-converter/releases/download/v1.0.1/M3U8-Converter-1.0.1.dmg)  the latest release as dmg.
+[**_Download_**](https://github.com/h0fnar/m3u8-converter/releases/download/v1.0.1/M3U8-Converter-1.0.1.dmg)  the latest release as dmg.
 
 ![M3U8 Converter](/img/app.png)
 
@@ -72,10 +72,18 @@ python3 -m PyInstaller -n "M3U8 Converter" --icon "img/icon.icns" --windowed mai
 ```
 <key>NSRequiresAquaSystemAppearance</key>
 <string>False</string>
-
 ```
+#
 
+If you edit the Qt Designer files, you must recompile them before you compile the package.
+```
+cd /m3u8-converter
+python3 -m PyQt5.uic.pyuic main_ui.ui -o main_ui.py
+python3 -m PyQt5.uic.pyuic about_ui.ui -o about_ui.py
+```
+> You can download a small version of Qt Designer [here](https://build-system.fman.io/qt-designer-download).
 
-
-
-
+If you make changes to the resources.qrc file, you also need to recompile it.
+```
+pyrcc5 resources.qrc -o resources_rc.py
+```
